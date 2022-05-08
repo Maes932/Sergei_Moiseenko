@@ -10,28 +10,19 @@
         border-radius: 0px 12px 0px 15px;
         width: 670px;
     }
-    a.word{
-        background: url(images/world.jpg);
-        display: block;
-    }
-    a.word:hover::before{
-       background: url(images/world.jpg);
-            
-            
-            
-            
+
+    a [href$=".jpg"]:hover:after{
+            content: url(images/world.jpg);
+            padding-left: 5px;
         }
-        a [href$=".png"]:hover::after{
+    a [href$=".png"]:hover:after{
             content: url(images/pdf.png);
             padding-left: 5px;
         }
-        a [href$=".gif"]:hover::after{
-            content: url(images/архив.gif);
+    a [href$=".gif"]:hover:after{
+            content: url(images/zip.gif);
             padding-left: 5px;
         }
-       li::before{
-           list-style: url(image/list.jpg);
-       }
        
     
 
@@ -66,9 +57,8 @@
     </div>
     <h1>Это список файлов</h1>
     
-    <img src="list.jpg"><a class="word" href="#">Документ MS World</a>
-    <img src="list.jpg"><a href="images/pdf.png">Документ PDF</a><br>
-    <img src="list.jpg"><a href="images/zip.gif">Архив</a><br>
-   
+    <div><img src="list.jpg"><a href="images/world.jpg">Документ MS World</a></div>
+    <div><img src="list.jpg"><a href="images/pdf.png">Документ PDF</a></div>
+    <div><img src="list.jpg"><a href="images/zip.gif">Архив</a></div>
 </body>
 </html>
