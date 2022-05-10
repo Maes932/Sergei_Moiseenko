@@ -73,14 +73,14 @@
         </tr>
     </table>
     <div>ДАННЫЕ О СОТРУДНИКАХ</div>
-    <button>Показать/cкрыть</button>
+    <button>Показать скрытые</button>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
     integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
     crossorigin="anonymous"></script>
 <script>
 $(document).ready(function(){
     $("button").click(function () {
-      $("tr").fadeToggle("300");
+      $("tr").slideDown("300");
     });
     $("#aaa").click(function () {
       $("#aaa").slideUp("300");
