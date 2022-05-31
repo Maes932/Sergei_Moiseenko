@@ -1,6 +1,3 @@
-from ossaudiodev import SNDCTL_DSP_BIND_CHANNEL
-
-
 rub = 4
 kop = 12
 product = 5
