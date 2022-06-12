@@ -1,12 +1,10 @@
-list = ['a', 'b', 'c']
-tuple_1 = tuple(list)                    #Преобразование списка в кортеж
+lst = ['a', 'b', 'c']
+tuple_1 = tuple(lst)                    #Преобразование списка в кортеж
+tuple = ('a', 'b', 'c')                   #Преобразование кортежа в список
+lst_1 = list(tuple)                     #Присвоение одной строкой
+(a, b, c) = ('a', int(2), 'python')      
 print(tuple_1)
-           
-tuple = ('a', 'b', 'c')
-list_1 = list(tuple)                     #Преобразование кортежа в список
-print(list_1)
-
-(a, b, c) = ('a', int(2), 'python')      #Присвоение одной строкой
+print(lst_1)
 print(a, b, c)
 
 
