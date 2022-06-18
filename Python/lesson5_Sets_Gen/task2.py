@@ -1,0 +1,4 @@
+print(len(set(input().split()) & set(input().split())))
+
+
+#Число различных чисел
