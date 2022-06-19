@@ -22,6 +22,7 @@ print()
 only_ten = set_ten - set_dota - set_litr
 print('Увлекаются только тенисом:', only_ten)
 print()
+#Увлечения
 
 
 
