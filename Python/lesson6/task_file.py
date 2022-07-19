@@ -1,11 +1,11 @@
-import matplotlib.pyplot as pyplot
+import matplotlib.pyplot as plt
 import json
 
 with open('E:\\Users\\Сергей\\Desktop\\ratings.txt', 'r') as f:
     data = [line.strip() for line in f.readlines()]
     columns = data[27].split(' ')
-    data_1 = [line.split(' ') for line in data[27:278]]
-    data_2 = [line.split(' ') for line in data[27:278]]
+    data_1 = [line.split(' ') for line in data[28:278]]
+    data_2 = [line.split(' ') for line in data[28:278]]
     
 Rank = [float(data_1[2]) for data_1 in data_1]
 Title = [data_1[3] for data_1 in data_1]
@@ -19,13 +19,14 @@ for i in years:
     else:
         i = i.replace('/', ' ').replace('I', ' ').replace(' ', ' ').strip()
         years_1.append(int(i))        
-    
+  
 with open('years.txt', 'w') as fh:
     json.dump(years, fh, indent=' ')
 with open('ratings films.txt', 'w') as fh:
-    json.dump(rank, fh, indent=' ')
+    json.dump(Rank, fh, indent=' ')
 with open('top250.txt', 'w') as fh:
-    json.dump(title, fh, indent=' ')        
+    json.dump(Title, fh, indent=' ') 
+           
    
             
 
