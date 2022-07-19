@@ -23,7 +23,7 @@ print_forward(lst)
 print_forward(lst) 
     
     
-    
+  print(*data[27:278:1], sep='\n')  
     
 
 
