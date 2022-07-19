@@ -1,3 +1,6 @@
-with open('ratings.txt', 'r', encoding="cp1252") as file:
-    print(file)
-        
+with open('E:\\Users\\Сергей\\Desktop\\ratings.txt', 'r') as f:
+    data = [line.strip() for line in f.readlines()]
+print(*data[27:278:1], sep='\n')
+
+
+
